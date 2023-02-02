@@ -1,0 +1,10 @@
+
+form{
+    background-color: aqua;
+    text-align: left;
+    max-width: 50%;
+}
+:required{
+    background-color: aliceblue;
+}
+
