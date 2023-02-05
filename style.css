@@ -3,6 +3,13 @@
         font-size: 1.2em;
     }
 }
+.mousemove {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+    }
 h1 {
    color: #ffe55f;
 }
@@ -13,7 +20,7 @@ header {
     background-image: url(imageetlogo.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: contain;
     background-color: white;
     padding : 2em;
@@ -29,12 +36,13 @@ body{
     background-image: url(nuagedegrade.png);
     background-color: white;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center center;
     background-attachment: fixed;
     background-size: 50% 50%;
     padding : 10px;
     width: 100%;
     height: 200px;
+    overflow-x: hidden;
 }
 .rechercher{
     color:black;
@@ -42,37 +50,35 @@ body{
     font-style: initial;
     float: right;
     margin-right: 0;
+    position: scroll;
 }
 logo {
     position: sticky;
 }
 nav {
-    float: left;
-    display: inline-block;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    text-align: center;
+    position: fixed;
     font-size: 15px;
+    height: 110px;
+    top: -150px;
+    transition: 0.25s ease;
+    background: linear-gradient(#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED)
 }
 ul {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100;
     list-style-type: none; /* retirer les balles */
     margin: 0;/* retirer les marges */
     padding: 0;/* retirer le remplissage de la liste */
+
 }
 ul li {
     margin-left: auto;
     margin-right: auto;
 }
 li{
-    float: left;
+    float: center;
     display: block;
     color: black;
     text-align: center;
@@ -92,19 +98,38 @@ a {
 }
 .box {
     text-align: center;
-    border-radius:10px 10px 10px 10px;
+    border-radius:20px 20px 20px 20px;
     padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 25px;
     font-weight: bolder;
     color: #ffcce5;
     border-color: black;
     border-width: 5px;
     border-style: double;
-    background-color: brown;
+    background-color: rgb(243, 103, 189);
+    transition: 0.25 ease;
 }
 .conteneur {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
-    gap: 10px;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 40px;
+}
+footer {
+    background-image: url(imageetlogo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    background-size: contain;
+    background-color: white;
+    padding : 2em;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin: 0;
 }
