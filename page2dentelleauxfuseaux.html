@@ -2,45 +2,63 @@
 <html lang="fr">
     <head>
                 <meta charset="utf-8">
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Au fil des Salines        </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <a href="imageetlogo.jpg"><img src="" title="Aufildessalines" alt="logo"></a>
-    </head>
+        <link rel="stylesheet" type="text/css" href="stylepage2.css">
+
+            </head>
     <body>
+		<img src="licorne.png" alt="licorne.png" id="licorne.png" style="position:absolute;display:block;z-index:5;" />
         <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="page2dentelleauxfuseaux.html">Dentelle aux fuseaux</a></li>
-                <li><a href="page3dentelledetricot.html">Dentelle de tricot</a></li>
-                <li><a href="page4dentelledecrochet.html">Dentelle de crochet</a></li>
-                <li><a href="inscription.html">Inscription</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <a href="imageetlogo.jpg"><img src="" title="Aufildessalines" alt=""></a>
+            <div class="rechercher">
+            <label for="Recherche">Rechercher:</label><input type="search" id="Rechercher" name="Rechercher"> 
+            <Button>Go !</Button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="page2dentelleauxfuseaux.html">Dentelle aux fuseaux</a></li>
+                    <li><a href="page3dentelledetricot.html">Dentelle de tricot</a></li>
+                    <li><a href="page4dentelledecrochet.html">Dentelle de crochet</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
 			<h1>
-				Au fil des Salines<br><!-- mettre à la ligne --> vous souhaite la bienvenue! "texte à modifier et ajouter logo"
-            </h1>
-            <div class="conteneur">
-                <div class="box une"> Element 1</div>
-                <div class="box deux"> Element 2</div>
-                <div class="box trois"> Element 3</div>
-                <div class="box quatre"> Element 4</div>
-                <div class="box cinq"> Element 5</div>
-                <div class="box six"> Element 6</div>
-                <div class="box sept"> Element 7</div>
-                <div class="box huit"> Element 8</div>
-                <div class="box neuf"> Element 9</div>
-                <div class="box dix"> Element 10</div>
-            </div>
+				Au fil des Salines<br><!-- mettre à la ligne --> vous souhaite la bienvenue!
+            </h1><br><br>
+			<div class="miseenpage">
 				<section>
-					<h2>
-						Titre de ma section
+					<h2 class="presentationpage">Dentelle aux fuseaux
 					</h2>
 					<p>
-						Texte de ma section.
+						<div class="lienpresentation">
+						<a href="page2dentelleauxfuseaux.html"> Découvrez mes créations de dentelle aux fuseaux </a>
+						<a href="page2-1dentelleauxfuseauxmarquepage.html"> Les marques pages </a>
+						<a href="page2-2dentelleauxfuseauxcoussinalliance.html"> Les coussins d'alliance</a>
+					</div>
+					</p>
+				</section><br><br><br>
+					<h2 class="titrepage">
+						Marque page
+					</h2>
+					<p>
+						<section>
+							<div class="conteneur">
+								<div class="box une"> Element 1</div>
+								<div class="box deux"> Element 2</div>
+								<div class="box trois"> Element 3</div>
+								<div class="box quatre"> Element 4</div>
+								<div class="box cinq"> Element 5</div>
+								<div class="box six"> Element 6</div>
+								<div class="box sept"> Element 7</div>
+								<div class="box huit"> Element 8</div>
+								<div class="box neuf"> Element 9</div>
+								<div class="box dix"> Element 10</div>
+							</div>
 					</p>
 				</section>
 				<section>
@@ -50,24 +68,6 @@
 					<p>
 						Texte de ma section. Avec des articles liés :
 					</p>
-					<div>
-						<article>
-							<h2>
-								Titre de mon article
-							</h2>
-							<p>
-								Texte de mon article.
-							</p>
-						</article>
-						<article>
-							<h2>
-								Titre de mon article
-							</h2>
-							<p>
-								Texte de mon article.
-							</p>
-						</article>
-					</div>
 				</section>
 			</div>
 			<aside>
@@ -76,14 +76,37 @@
 				</p>
 			</aside>
 		</main>
-        <p><!-- commentaire --> </p>
-        <footer>liens de contact
-            <p>
+        <footer>
+			<a href="imageetlogo.jpg"><img src="" title="Aufildessalines" alt=""></a>
+            <p>liens de contact:
+				<div id=facebook><a href="https://www.facebook.com/NOM">Facebook <img src="" /></a></div>
+				<div id=instagram><a href="https://www.instagram.com/carole.clh/?hl=fr"> Instagram <img src="Instagram_icon.png" /></a></div>
+				<div id=pnterest><a href="https://www.pint.it/3y4NNi2">Pinterest <img src"" /></a></div>
 				<small>
 					Copyrights 2023 - Aufildessalines - <a href="mentions_legales.html">Mentions légales</a>
 				</small>
 			</p>
-
         </footer>
+		<script type="text/javascript">
+			//<!--
+					document.onmousemove = suitsouris;
+					function suitsouris(evenement)
+					{
+							if(navigator.appName=="Microsoft Internet Explorer")
+							{
+									var x = event.x+document.body.scrollLeft;
+									var y = event.y+document.body.scrollTop;
+							}
+							else
+							{
+									var x =  evenement.pageX;
+									var y =  evenement.pageY;
+							}
+							document.getElementById("licorne.png").style.left = (x+1)+'px';
+							document.getElementById("licorne.png").style.top  = (y+1)+'px';
+					}
+			//-->
+			</script>
+			<script src="./index.js"></script>
     </body>
 </html>
