@@ -15,7 +15,7 @@ html, body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1 {
-   color: #ffe55f;
+   color: linear-gradient(#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
 }
 head{
     background-color: white;
@@ -120,7 +120,7 @@ li{
     background: linear-gradient(#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED)
 }
 a {
-    display: block;
+    display: flex;
     color: black;
     text-align: center;
     vertical-align: middle;
@@ -135,6 +135,15 @@ nav a:hover {
 }
 .active {
     background-color: pink; /* pour que la personne repère sur quel lien elle se trouve */
+}
+.lienpresentation {
+    text-align: left;
+margin-left: 30px;
+}
+.lienpresentation a:hover {
+    color: black;
+    font-weight: inherit;
+    font-size: 20px;
 }
 .box {
     text-align: center;
