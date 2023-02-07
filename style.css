@@ -80,6 +80,7 @@ nav {
     grid-template-columns: 6, 100px;
     grid-template-rows:  80px;
     gap: 50px;
+    background-color: white;
 }
 nav ul li {
     list-style: none;
@@ -136,12 +137,44 @@ nav a:hover {
 .active {
     background-color: pink; /* pour que la personne repère sur quel lien elle se trouve */
 }
+.miseenpage {
+    display: grid;
+    justify-content: center;
+    align-items: top;
+    grid-template-columns: 400px 400px;
+    grid-template-rows:200px 200px;
+    column-gap: 600px;
+    row-gap: 80px;
+    margin-left: 20px;
+}
+h2 {
+   display: grid;
+   text-align: center;
+   border-color: black;
+   border: 20px black solid;
+   border-radius: 20px 20px 20px 20px;
+   border-width: 5px;
+   border-style: solid;
+   padding: 0;
+   width: 300px;
+}
+
 .lienpresentation {
     text-align: left;
     margin-left: 30px;
     line-height: 0cm;
 }
 .lienpresentation a:hover {
+    color: black;
+    font-weight: inherit;
+    font-size: 20px;
+}
+.lienpresentationdroite {
+    text-align: right;
+    margin-left: 30px;
+    line-height: 0cm;
+}
+.lienpresentationdroite a:hover {
     color: black;
     font-weight: inherit;
     font-size: 20px;
