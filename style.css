@@ -15,7 +15,7 @@ html, body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1 {
-   color: linear-gradient(#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
+    text-align: center;
 }
 head{
     background-color: white;
@@ -138,7 +138,8 @@ nav a:hover {
 }
 .lienpresentation {
     text-align: left;
-margin-left: 30px;
+    margin-left: 30px;
+    line-height: 0cm;
 }
 .lienpresentation a:hover {
     color: black;
