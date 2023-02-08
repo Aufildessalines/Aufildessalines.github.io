@@ -66,7 +66,7 @@ nav {
     position: fixed;
     font-size: 15px;
     display: flex;
-    top: -500px;
+    top: -150px;
     transition: 0.25s ease;
     background-color: white;
 }
@@ -78,14 +78,13 @@ ul {
     display: flex;  
 }
 li {    
-    text-align: center;
     box-sizing: border-box;
     border-radius: 100% 100% 0% 0%;
-    height: 75px;          
-    width: 75px; 
-    padding: 0px 0 0 0 0; 
-    margin: 0 65px; 
-    position: relative;
+    height: 100px;          
+    width: 100px; 
+    margin: 0 53px; 
+    position: relative;    
+    padding: 10px 0 0 0; 
     background: linear-gradient( #C7D5ED,#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
 }
 li::before, li::after {
@@ -96,16 +95,16 @@ li::before, li::after {
     border-radius: 100%;  
 }
 li::before {
-    width: 62.5px;
-    height: 62.5px;
-    left: -40px;
+    width: 83.3px;
+    height: 83.3px;
+    left: -53.3px;
     border-bottom-right-radius: 0;
     background: linear-gradient(#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
 }
 li::after {
-    width: 50px;
-    height: 50px;
-    right: -30px;
+    width: 66.7px;
+    height: 66.7px;
+    right: -40px;
     border-bottom-left-radius: 0;
     background: linear-gradient( #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
 }
@@ -113,7 +112,7 @@ a {
     display: flex;
     color: black;
     vertical-align: middle;
-    padding: 25px 25px;
+    padding: 25px 10px;
     text-decoration: none;
 }
 nav a:hover {
