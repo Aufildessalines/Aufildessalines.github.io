@@ -50,64 +50,75 @@ body{
     background: top 0;
     overflow-x: hidden;
 }
-.rechercher{
-    color:black;
-    font-weight: bold;
-    font-style: initial;
-    float: right;
-    margin-right: 0;
-    position: scroll;
-}
 logo {
     position: sticky;
 }
+/* barre de navigation */
 nav {
     position: fixed;
     font-size: 15px;
-    height: 100px;
-    top: -150px;
     display: flex;
-    width: 90%;
-    top: -250px;
+    top: -150px;
     transition: 0.25s ease;
     background-color: white;
+    cursor: pointer;
+}
+nav input{
+    margin: 30px 0px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    /* enelever la bordure  */
+    background-color: #f2f2f2;
+}
+nav p{
+    margin-right: 5px;
+
 }
 nav ul li {
     list-style: none;
     /* centrer la barre de navigation */
     }
-ul li {
-    text-align: center;
-}
 ul {
-    display: flex;    
-    flex-direction: row; 
-    list-style: none;
-    width: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    overflow: hidden;
-    margin: 0;
+    display: flex;  
 }
-li {
-    float: center;
-    display: block;
-    margin: auto;
-    color: black;
-    height: 60px;    
-    border-radius: 20px;
-    border-color: black;
-    border-width: 4px;
-    border-style: solid;
-    background: linear-gradient(#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED)
+li {    
+    box-sizing: border-box;
+    border-radius: 100% 100% 0% 0%;
+    height: 100px;          
+    width: 100px; 
+    margin: 0px 60px 0px 15px; 
+    position: relative;    
+    padding: 10px 0 0 0; 
+    background: linear-gradient(#39E5FA, #C7D5ED,#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
 }
-a {
+li::before, li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 100%;  
+}
+li::before {
+    width: 70px;
+    height: 70px;
+    left: -45px;
+    border-bottom-right-radius: 0;
+    background: linear-gradient(#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
+}
+li::after {
+    width: 57px;
+    height: 57px;
+    right: -30px;
+    border-bottom-left-radius: 0;
+    background: linear-gradient( #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
+}
+nav a {
     display: flex;
     color: black;
-    text-align: center;
     vertical-align: middle;
-    padding: 14px 16px;
+    padding: 25px 10px;
     text-decoration: none;
 }
 nav a:hover {
@@ -116,6 +127,9 @@ nav a:hover {
     font-size: 20px;
     /* mise en relief élément barre navigation quand dessus */
 }
+
+/* fin barre de navigation */
+/* lien de navigation par thème */
 .presentationpage {
    display: block;
    text-align: center;
@@ -127,65 +141,73 @@ nav a:hover {
    padding: 0;
    width: 300px;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+.lienpresentation:active {
+    color: pink;
+}
 .lienpresentation {
-    text-align: left;
     margin-left: 30px;
-    line-height: 0cm;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 .lienpresentation a:hover {
-    color: black;
+    color: #39E5FA;
     font-weight: inherit;
     font-size: 20px;
 }
+/* lien de navigation par thème */
 .titrepage {
     text-align: center;
     font-size: 30px;
 }
-.box {
-    text-align: center;
-    box-sizing: border-box;
-    /* permet de prendre en compte la bordure et le remplissage */
-    border-radius:20px 20px 20px 20px;
-    padding: 100px;
-    margin-right: 0px;
-    font-size: 25px;
-    font-weight: bolder;
-    color: #ffcce5;
-    border-color: black;
-    border-width: 5px;
-    border-style: double;
-    background-color: rgb(243, 103, 189);
-    transition: 0.25 ease;
-    max-width: 200px;
-    min-width: 200px;
+/* section articles */
+.main{
+    margin: 20px;
+    margin-top: 80px;    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.img_agurimihippocampe {
+.conteneur{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
-.conteneur {
-    display: grid;
-    box-sizing: border-box;
-    justify-content: space-around;
-    align-items: center;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px 300px;
-    gap: 10px;
+.conteneur .box{
+    margin-right: 20px;
+    cursor: pointer;
 }
+.conteneur .box img {
+    width: 300px;
+}
+.conteneur .box .boxfooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.conteneur .box .descriptionbox p{
+    margin-top: -10px;
+}
+/* fin section articles */
 .Instagram {
     position: absolute;
     left: -99999rem;
     width: 10%;
 }
-#liensdecontact {
+.iconereseaux{
     display: flex;
     flex-direction: row;
-    position: absolute;
-    text-align: center;
-    width: 40%;
+    padding: 3rem 0rem 0rem 3rem;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    margin-left: 3rem;
+    gap: 20px;
 }
 #copyrights {
     position: absolute;
@@ -193,6 +215,7 @@ nav a:hover {
     flex-direction: row;
     text-align: center;
     width: 80%;
+    padding: 350px 0px 0px 530px;
 }
 footer {
     background-image: url(imageetlogo.jpg);
