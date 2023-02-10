@@ -1,4 +1,11 @@
 
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 form{
     background-color: aqua;
     text-align: left;
