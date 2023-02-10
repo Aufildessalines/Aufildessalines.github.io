@@ -182,7 +182,7 @@ a {
 .conteneur .box{
     margin-right: 50px;
     cursor: pointer;
-    box-shadow: 15px -10px 15px #F98BE9;
+    box-shadow: 10px -10px 15px grey;
     padding-bottom: 10px;
 }
 .conteneur .box img {
