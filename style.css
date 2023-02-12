@@ -48,17 +48,6 @@ body{
     background: top 0;
     overflow-x: hidden;
 }
-.rechercher{
-    color:black;
-    font-weight: bold;
-    font-style: initial;
-    float: right;
-    margin-right: 100px;
-    position: scroll;
-}
-logo {
-    position: sticky;
-}
 nav {
     position: fixed;
     font-size: 15px;
@@ -118,24 +107,64 @@ nav a:hover {
     font-size: 20px;
     /* mise en relief élément barre navigation quand dessus */
 }
-nav .iconereseaux{
-    font-size: 2rem;
-    padding: 0.5rem;
+nav .lieniconereseaux{
+    display: flex;
+    flex-wrap: column;
+    width: 10%;
+    font-size: 15px;
+    padding: 2px;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
-nav .iconereseaux{
-    margin-right: 0.5rem;
+nav .lieniconereseaux a:hover {    
+    font-size: 20px;
+    font-weight: 20px;
+    color: aqua;
 }
-nav .iconereseaux:hover {    
-    font-size: 4rem;
-    font-weight: 500px;
-    color: white;
-
+/* newsletter début */
+.newsletter{
+    padding: 100px 40px;
+    text-align: center;
+    color: black;
 }
-nav .iconereseaux:last-child {
-    position: relative;
+.newsletter p{
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 15px;
+    font-weight: 300;
 }
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.email-box i{
+    background-color: #00FFFF;
+    width: 40px;
+    line-height: 40px;
+}
+.tbox,.btnbox{
+    border: none;
+    outline: none;
+}
+.tbox{
+    width: 0px;
+    transition: 0.6s;
+}
+.email-box:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 10 260px;
+}
+.btnbox{
+    background-color: #00FFFF;
+    color: black;
+    font-weight: bold;
+    font-style: oblique;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* newsletter fin */
 .miseenpage {
     display: grid;
     justify-content: center;
@@ -144,6 +173,7 @@ nav .iconereseaux:last-child {
     column-gap: 600px;
     row-gap: 10px;
 }
+
 h2 {
    display: grid;
    text-align: center;
@@ -192,6 +222,7 @@ a:active {
     font-weight: inherit;
     font-size: 20px;
 }
+
 footer {
     background-image: url(imageetlogo.jpg);
     background-repeat: no-repeat;
