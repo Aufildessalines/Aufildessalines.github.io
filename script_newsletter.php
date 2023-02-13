@@ -34,7 +34,7 @@ if(isset($_POST["S'inscrire"])){
                     Au fil des salines</p>
                     </body>
                     </html>;
-                    mail($email, "Inscription à la newsletter (aufildessalines.github.io)", $message, $header);
+                        mail($email, "Inscription à la newsletter (aufildessalines.github.io)", $message, $header);
 
                     $success="<span class="success"><i class="fas fa-check-circle"></i> Inscription validée! </span><br>";
 

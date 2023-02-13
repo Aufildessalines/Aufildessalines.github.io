@@ -13,7 +13,7 @@
             <a href="imageetlogo.jpg"><img src="" title="Aufildessalines" alt=""></a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.php">Accueil</a></li>
                     <li><a href="page2dentelleauxfuseaux.html">Dentelle aux fuseaux</a></li>
                     <li><a href="page3dentelledetricot.html">Dentelle de tricot</a></li>
                     <li><a href="page4dentelledecrochet.html">Dentelle de crochet</a></li>					
