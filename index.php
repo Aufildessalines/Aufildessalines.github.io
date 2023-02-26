@@ -19,7 +19,6 @@
                     <li><a href="page3dentelledetricot.html">Dentelle de tricot</a></li>
                     <li><a href="page4dentelledecrochet.html">Dentelle de crochet</a></li>					
                     <li><a href="page5agurimis.html">Agurimis</a></li>
-                    <li><a href="inscription.html">Inscription</a></li>
                     <li><a href="contact.html">Contact</a></li>		
 				<form>
 					<input type="search" placeholder="Rechercher">
