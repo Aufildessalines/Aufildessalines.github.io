@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
                 <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width" />
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <br><br><title>Au fil des Salines        </title>
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -100,7 +101,7 @@
 				</section>
 			</div>
 			<div class="newsletter">
-            <?php include "inc/script_newsletter.php"?>
+            <?php include ("script_newsletter.php"); ?>
 		    <span class="erreurs"><?php if(isset($erreur))(echo $erreur;)?></span>
 		    <span class="erreurs"><?php if(isset($success))(echo $success;)?></span>
             <span class="line"></span>
@@ -111,7 +112,7 @@
 					<div class="email-box">
 						<i class="fa-solid fa-envelope"></i>
 						<input class="tbox" type="email" name="mailing" placeholder="Entrez votre adresse email">
-						<input class="btnbox" type="button" name="button" value="S'inscrire"></button>
+						<input class="btnbox" type="submit" name="S'inscrire" value="">S'inscrire</button>
 					</div>
 				</form>
 			</div>

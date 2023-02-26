@@ -7,7 +7,7 @@ if(isset($_POST["S'inscrire"])){
        
             require_once "conf.php";
 
-            // vérifier si mail pax existant base donnees
+            // vérifier si mail pas existant base donnees
             $rows= $pdo->prepare("SELECT * FROM members WHERE email=?");
             $rows->execute(array($email));
 
@@ -21,9 +21,9 @@ if(isset($_POST["S'inscrire"])){
                 $req = $pdo->prepare("INSERT INTO members(email, date_time) VALUES(?,?)");
                 $req->execute(array($email,$time));
 
-                $header="MIME-version: 1.0 \e\n";
-                    $header.="FROM:"Aufildessalines.github.io"<dentelle.rivegauche.newsletter@gmail.com>"."\n";
-                    $header.="Content-Type:text/html; charsert="utf-8"."\n";
+                $header="MIME-Version: 1.0 \e\n";
+                    $header.="FROM: Aufildessalines <dentelle.rivegauche.newsletter@gmail.Com> \n";
+                    $header.="Content-type: text/html; charsert="utf-8"."\n";
                     $header.="content-Transfer-Encoding: 8bit";
 
                     $message="<html>
@@ -36,7 +36,7 @@ if(isset($_POST["S'inscrire"])){
                     </html>;
                         mail($email, "Inscription à la newsletter (aufildessalines.github.io)", $message, $header);
 
-                    $success="<span class="success"><i class="fas fa-check-circle"></i> Inscription validée! </span><br>";
+                        $success="<span class="success"><i class="fas fa-check-circle"></i> Inscription validée! </span><br>";
 
                     unset($email);
 
@@ -49,3 +49,4 @@ if(isset($_POST["S'inscrire"])){
         $erreur="<span class="erreur"><i class="fas fa-exclamation-circle"></i> Veuillir saisir votre adresse email complète</span><br>";
     }
 }
+?>

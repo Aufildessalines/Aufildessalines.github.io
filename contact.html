@@ -32,12 +32,19 @@
         </header>
         <main>
             <p>Pour toute demande de contact ou réclamation:</p>
-            <form method="get" action="">
-             <p>
-                <label for="Contact">Formulaire de contact</label><br>
-                <textarea name="contact" id="contact" rows="10"; cols="100"></textarea>
-             </p>
+            <form method="GET" action="submit_contact.php">
+                <div class="mb-1">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email-help">
+                    <div id="email-help" class="form-text">Nous ne revendrons pas votre email.</div>
+                </div>
+                <div class="mb-2">            <p>
+                    <label for="Contact">Formulaire de contact</label><br>
+                    <textarea name="contact" id="contact" rows="10"; cols="100" placeholder="Exprimez-vous"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Envoyer</button>
             </form>
+            </p>
         </main>
         <footer>
 			<div class="iconereseaux">
