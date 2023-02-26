@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
                 <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width" />
+                <meta name="viewport" content="width=device-width", initial-scale=1.0" />
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <br><br><title>Au fil des Salines        </title>
         <link rel="stylesheet" type="text/css" href="style.css">

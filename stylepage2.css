@@ -1,6 +1,17 @@
 @media screen and (max-width: 1024px) {
-    p {
+    * {
         font-size: 1.2em;
+        overflow: auto;
+    }
+}
+@media all and (min-width: 1024px) and (max-width: 1024px) {
+    * {
+        font-size: 1em;
+        overflow: auto;
+    }
+}
+@media all and (orientation: portrait) {
+    * {overflow: auto;
     }
 }
 .mousemove {
@@ -145,12 +156,12 @@ nav .lieniconereseaux a:hover {
    display: block;
    text-align: center;
    border-color: black;
-   border: 20px black solid;
-   border-radius: 20px 20px 20px 20px;
-   border-width: 5px;
+   border: 20% black solid;
+   border-radius: 20% 20% 20% 20%;
+   border-width: 15%;
    border-style: solid;
    padding: 0;
-   width: 300px;
+   width: 70%;
 }
 a {
     text-decoration: none;
