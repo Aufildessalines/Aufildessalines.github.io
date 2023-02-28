@@ -220,7 +220,7 @@
     .lienpresentation a:hover {
         color:#39E5FA;
         font-weight: inherit;
-        font-size: 20px;
+        font-size: 125%;
     }
     .lienpresentationdessous {
         margin-left: 5%;
@@ -351,7 +351,7 @@
         z-index: -1;
         border-radius: 100%;  
     }
-    li::before {
+    nav li::before {
         width: 90%;
         height: 70%;
         left: -50%;
