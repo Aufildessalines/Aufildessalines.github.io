@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width", initial-scale=1.0" />
-				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <br><br><title>Au fil des Salines        </title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scal=1.0" />
+        <title>Au fil des Salines        </title>
         <link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://kit.fontawesome.com/6d273938c6.js" crossorigin="anonymous"></script>
 	</head>
     <body>
-		<img src="licorne.png" alt="licorne.png" id="licorne.png" style="position:absolute;display:block;z-index:5;" />
         <header>
-            <a href="imageetlogo.jpg"><img src="" title="Aufildessalines" alt=""></a>
-            <nav>
+			<nav>
                 <ul>
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="page2dentelleauxfuseaux.html">Dentelle aux fuseaux</a></li>
@@ -20,37 +17,34 @@
                     <li><a href="page4dentelledecrochet.html">Dentelle de crochet</a></li>					
                     <li><a href="page5agurimis.html">Agurimis</a></li>
                     <li><a href="contact.html">Contact</a></li>		
-				<form>
-					<input type="search" placeholder="Rechercher">
-				</form>	
-				<div class="lieniconereseaux">
-				<p><a href="https://www.facebook.com/dentelle.rivegauche"><i class="fa-brands fa-facebook"></i></a></p>
-				<p><a href="https://www.instagram.com/carole.clh/?hl=fr"><i class="fa-brands fa-instagram"></i></a></p>
-				<p><a href="https://www.pinterest.fr/carolelehein/au-fil-des-salines-clh/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id=%7B%7Bdefault.session%7D%7D&amp_url=https%3A%2F%2Fwww.pinterest.fr%2Famp%2Fcarolelehein%2Fau-fil-des-salines-clh%2F&open_share=t"><i class="fa-brands fa-pinterest"></i></a></p>	
-			    </div>
-			    </ul>
+				</ul>
             </nav>
+			<form>
+				<input type="search" placeholder="Rechercher">
+			</form>	
+			<div class="lieniconereseaux">
+			<a href="https://www.facebook.com/dentelle.rivegauche"><i class="fa-brands fa-facebook"></i></a></p>
+			<a href="https://www.instagram.com/carole.clh/?hl=fr"><i class="fa-brands fa-instagram"></i></a></p>
+			<a href="https://www.pinterest.fr/carolelehein/au-fil-des-salines-clh/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id=%7B%7Bdefault.session%7D%7Damp_url=https%3A%2F%2Fwww.pinterest.fr%2Famp%2Fcarolelehein%2Fau-fil-des-salines-clh%2F&open_share=t"><i class="fa-brands fa-pinterest"></i></a></p>	
+			</div>
         </header>
         <main>
 			<h1>
 				Au fil des Salines<br><!-- mettre à la ligne --> vous souhaite la bienvenue!
-            </h1><br><br><br>
+            </h1><br><br>
 			<div class="miseenpage">
 				<section>
 					<h2>Dentelle aux fuseaux
 					</h2>
-					<p>
-						<div class="lienpresentation">
+					<div class="lienpresentation">
 						<a href="page2dentelleauxfuseaux.html"> Découvrez mes créations de dentelle aux fuseaux </a>
 						<a href="page2-1dentelleauxfuseauxmarquepage.html"> Les marques pages </a>
 						<a href="page2-2dentelleauxfuseauxcoussinalliance.html"> Les coussins d'alliance</a>
 					</div>
-					</p>
 				</section>
 				<section>
 					<h2>Dentelle de tricot
 					</h2>
-					<p>
 						<div class="lienpresentation">
 						<a href="page3dentelledetricot.html">Découvrez mes créations de dentelle de tricot</a>
 						<a href="page3-1dentelledetricotchalescheches.html"> Les châles et cheches</a>
@@ -59,13 +53,11 @@
 						<a href="page3-4dentelledetricotberetbonnet.html"> Les bérets et bonnets</a>
 						<a href="page3-5dentelledetricotmitaine.html"> Les mitaines</a>
 						</div>
-					</p>
 				</section>
 				<section>
 					<div class="dentelledecrochet">
 					<h2>Dentelle de crochet
 					</h2>
-					<p>
 						<div class="lienpresentationdessous">
 						<a href="page4dentelledecrochet.html">Découvrez mes créations de dentelle de crochet</a>
 						<a href="page4-1dentelledecrochetaccessoires.html"> Les accessoires</a>
@@ -79,13 +71,11 @@
 						<a href="page4-9dentelledecrochetdecomaison.html"> La déco maison</a>
 						</div>
 					</div>
-					</p>
 				</section>
 				<section>
 					<div class="agurimis">
 					<h2>Agurimis
 					</h2>
-					<p>
 						<div class="lienpresentationdessous">
 						<a href="page5agurimis.html">Découvrez mes créations d'agurimis</a>
 						<a href="page5-1agurimismondemarin.html"> Le monde marin</a>
@@ -96,7 +86,6 @@
 						<a href="page5-6agurimisdinette.html"> La dinette</a>
 						</div>
 					</div>
-					</p>
 				</section>
 			</div>
 			<div class="newsletter">
