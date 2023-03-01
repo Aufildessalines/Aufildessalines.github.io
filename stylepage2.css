@@ -16,17 +16,15 @@ html, body {
   }
 h1 {
     text-align: center;
-    margin: 5% 0% 0% 0%;
 }
 header {
-    background-image: url(imageetlogo.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
     background-size: contain;
+    background-color: white;
     padding :0;
     width: 100%;
-    height: 500px;
     box-sizing: border-box;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -187,7 +185,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
 }
 .conteneur{
     display: flex;
@@ -240,143 +237,31 @@ footer {
     margin-top: 0%;
 }
 @media screen and (max-width: 650px) {
-    html, body {
-        box-sizing: border-box;
-        padding: 0;
-        min-height: 100vh;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
     h1 {
         text-align: center;
         margin: 40% 0% 0% 0%;
     }
-    header {
-        background-image: url(imageetlogo.jpg);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-color: white;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        padding :0;
-        width: 100%;
-        height: 500px
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        margin: 0;
-    }
-    body{
-        background-image: url(nuagedegrade.png);
-        background-color: white;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: 50% 50%;
-        overflow-x: hidden;
-    }
-    /* barre de navigation */
-
     nav {
-        position: fixed;
-        display: flex;
-        flex-direction: row;
         font-size: 70%;
-        margin: 0% 0% 0% 0%;
-        width: 90%;
-        height: 25%;
-        top: -150px;
-        margin: 0% 0% 0% 0%;
-        transition: 0.25s ease;
-        background-color: white;
-        cursor: pointer;
-    }
-    nav ul li {
-        list-style: none;
-        /* centrer la barre de navigation */
     }
     nav ul {
-            display: flex;  
             width: 100%;
-            align-items: center;
-            justify-content: center;
             margin: 0% 0% 0% 5%;
     }
     nav li {    
-        box-sizing: border-box;
-        border-radius: 100% 100% 0% 0%;
         height: 40%; 
         width: 70%;
-        margin: 0 5% 0 5%; 
-        position:relative;
+        margin: 0 5% 0 5%;
         padding: 4% 0 0 0; 
-        background: linear-gradient(#39E5FA, #C7D5ED,#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
-    }
-    nav li::before, nav li::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-        border-radius: 100%;  
-    }
-    nav li::before {
-        width: 90%;
-        height: 70%;
-        left: -50%;
-        border-bottom-right-radius: 0;
-        background: linear-gradient(#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
-    }
-    nav li::after {
-        width: 85%;
-        height: 56%;
-        right: -55%;
-        border-bottom-left-radius: 0;
-        background: linear-gradient( #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
-    }
-    nav a {
-        display: flex;
-        font-size: 1em;
-        color: black;
-        vertical-align: middle;
-        padding: 20% 5%;
-        text-decoration: none;
-    }
-    nav a:hover {
-        color: black;
-        font-weight: inherit;
-        font-size: 120%;
-        /* mise en relief élément barre navigation quand dessus */
     }
     input{
-        position: fixed;
         margin: -10% 0% 0% 30%;
         padding: 1% 1% 1% 5%;
-        border-radius: 30px;
-        border: none;
-        outline: none;
-        z-index: +1;
-        /* enelever la bordure  */
-        background-color: #f2f2f2;
     }
     .lieniconereseaux{
-        display: flex;
-        flex-direction: row;
-        column-gap: 1%;
         margin: -15% 0% 0% 0%;
-        position: fixed;
-        z-index: +1;
-        width: 100%;
         font-size: 80%;
-        padding: 5% 8%;
-        cursor: pointer;
-        transition: all 300ms ease-in-out;
     }
-    .lieniconereseaux a:hover {    
-        font-size: 200%;
-        color: aqua;
-    }
-    
-    /* fin barre de navigation */
-    /* lien de navigation par thème */
     .presentationpage {
        text-align: center;
        border-color: black;
@@ -387,27 +272,6 @@ footer {
        padding: 0;
        width: 70%;
     }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    .lienpresentation:active {
-        color: pink;
-    }
-    .lienpresentation {
-        margin-left: 5%;
-        display: flex;
-        flex-direction: column;
-        color: black;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-    }
-    .lienpresentation a:hover {
-        color: #39E5FA;
-        font-weight: inherit;
-        font-size: 50%;
-    }
-    /* lien de navigation par thème */
     .titrepage {
         text-align: center;
         font-size: 30%;
@@ -482,211 +346,88 @@ footer {
     }
     }
 @media all and (min-width: 651px) and (max-width: 900px) {
-    html, body {
-        padding: 0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
     h1 {
         padding: 30% 0% 0% 0%;
         margin: 40% 10% 10% 10%;
         text-align: center;
     }
-    header {
-        background-image: url(imageetlogo.jpg);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        padding :0;
-        width: 100%;
-        height: 500px;
-        box-sizing: border-box;
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-    }
-    body{
-        background-image: url(nuagedegrade.png);
-        background-color: white;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: 45% 45%;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-        z-index: -1;
-    }
-    /* barre de navigation */
-    nav {
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        font-size: 100%;
-        margin: 0% 0% 0% 15%;
-        width: 85%;
-        height: 25%;
-        top: -150px;
-        transition: 0.25s ease;
-        background-color: white;
-        cursor: pointer;
-    }
-    nav ul li {
-        list-style: none;
-        /* centrer la barre de navigation */
-    }
-    nav ul {
-            display: flex;  
-            width: 70%;
-            align-items: center;
-            justify-content: center;
-    }
     nav li {    
-        box-sizing: border-box;
-        border-radius: 100% 100% 0% 0%;
         height: 60%; 
-        width: 100%;
         margin: 0 10% 0 4%; 
-        position:relative;
         padding: 1% 0 0 0; 
-        background: linear-gradient(#39E5FA, #C7D5ED,#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
-    }
-    nav li::before, nav li::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-        border-radius: 100%;  
-    }
-    nav li::before {
-        width: 90%;
-        height: 70%;
-        left: -50%;
-        border-bottom-right-radius: 0;
-        background: linear-gradient(#F98BE9, #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
-    }
-    nav li::after {
-        width: 85%;
-        height: 56%;
-        right: -55%;
-        border-bottom-left-radius: 0;
-        background: linear-gradient( #00FFFF, #FFFF38, #F98BE9, #39E5FA, #C7D5ED);
-    }
-    nav a {
-        display: flex;
-        font-size: 1em;
-        color: black;
-        vertical-align: middle;
-        padding: 20% 5%;
-        text-decoration: none;
-    }
-    nav a:hover {
-        color: black;
-        font-weight: inherit;
-        font-size: 120%;
-        /* mise en relief élément barre navigation quand dessus */
     }
     input{
-        position: fixed;
         margin: 18% 0% 0% 0%;
         padding: 1% 1% 1% 2%;
-        border-radius: 30px;
-        border: none;
-        outline: none;
-        z-index: +1;
-        /* enelever la bordure  */
-        background-color: #f2f2f2;
     }
     .lieniconereseaux{
-        display: flex;
-        flex-direction: row;
-        column-gap: 1%;
         margin: 13% 0% 0% 0%;
-        position: fixed;
-        z-index: +1;
-        width: 100%;
         font-size: 80%;
         padding: 5% 8%;
-        cursor: pointer;
-        transition: all 300ms ease-in-out;
     }
-    .lieniconereseaux a:hover {    
-        font-size: 200%;
-        color: aqua;
-    }
-/* lien de navigation par thème */
-    .titrepage {
-        text-align: center;
-        font-size: 30px;
-    }
-/* section articles */
     .main{
         margin: 20px;
-        margin-top: 50px;    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .conteneur{
-        display: flex;
-        flex-wrap: wrap;
+        margin-top: 50px;   
     }
     .conteneur .box{
         margin-right: 50px;
-        cursor: pointer;
-        box-shadow: 10px -10px 15px grey;
-        padding-bottom: 10px;
-    }
-    .conteneur .box img {
-    width: 300px;
-    }
-    .conteneur .box .boxfooter{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     }
     .conteneur .box .descriptionbox p{
     margin-top: -10px;
     }
-/* fin section articles */
-
     .iconereseaux{
-    display: flex;
-    flex-direction: row;
     padding: 3rem 0rem 0rem 3rem;
-    cursor: pointer;
-    transition: all 500ms ease-in-out;
-    margin-left: 3rem;
     gap: 20px;
     }
-    #copyrights {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    width: 80%;
-    padding: 350px 0px 0px 530px;
-    }
     footer {
-    background-image: url(imageetlogo.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: scroll;
-    background-size: contain;
-    background-color: white;
-        padding : 2em;
-        width: 100%;
-        height: 500px;
-        box-sizing: border-box;
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        margin: 0;
+        margin-top: 50px;
     }
-    #imageetlogofooter {
-        display: block;
+    #copyrights {
+        padding-left: 50px;
+        padding-top: 250px;
     }
+    .imageetlogofooter {
+        width: 50px;
+        margin-left: 10%;
+    }
+    }
+    @media all and (min-width: 1100px) and (max-width: 1199px) {
+        #copyrights {
+            width: 100%;
+            padding: 25% 0% 0% 30%;
+        }
+        .input{
+            padding: 1% 1% 1% 1%;
+            margin: -430px 0px 0px 280px;
+        }
+        .lieniconereseaux{
+            margin: -470px 0px 0px 950px;
+        }
+    }
+    @media all and (min-width: 1000px) and (max-width: 1099px) {
+        #copyrights {
+            width: 100%;
+            padding: 25% 0% 0% 30%;
+        }
+        .input{
+            padding: 10px 5px 10px 10px;
+            margin: -430px 0px 0px 240px;
+        }
+        .lieniconereseaux{
+            margin: -470px 0px 0px 850px;
+        }
+    }
+    @media all and (max-width: 999px) {
+        footer {
+            margin-top: 50px;
+        }
+        #copyrights {
+            padding-left: 50px;
+            padding-top: 250px;
+        }
+        .imageetlogofooter {
+            width: 50px;
+            margin-left: 10%;
+        }    
     }
    

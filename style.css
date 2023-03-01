@@ -264,7 +264,6 @@ footer {
     z-index: -1;
     margin-top: 0%;
 }
-
 @media all and (min-width: 1200px) and (max-width: 1249px) {
     header {
         height: 400px;
@@ -303,12 +302,6 @@ footer {
         grid-template-rows: 40% 40%;
         column-gap: 25%;
         row-gap: 5%;
-    }
-    .lienpresentation {
-        margin-left: 5%;
-    }
-    .lienpresentationdessous {
-        margin-left: 5%;
     }
     .iconereseaux{
         padding: 0% 0% 0% 0%;
