@@ -7,3 +7,4 @@ window.addEventListener("scroll", () => {
         nav.style.top = "-250px"
     }
 });
+
