@@ -88,6 +88,7 @@
 					</div>
 				</section>
 			</div>
+			<br>
 			<div class="newsletter">
             <?php include ("script_newsletter.php"); ?>
 		    <span class="erreurs"><?php if(isset($erreur))(echo $erreur;)?></span>
@@ -96,33 +97,28 @@
 				<form action="" method="post">
 					<h3>Pour être au courant de chaque nouveauté<br>
 						Abonnez vous à ma newsletter!</h3>
-					<p></p>
 					<div class="email-box">
 						<i class="fa-solid fa-envelope"></i>
-						<input class="tbox" type="email" name="mailing" placeholder="Entrez votre adresse email">
-						<input class="btnbox" type="submit" name="S'inscrire" value="">S'inscrire</button>
+						<input class= "tbox" type="email" name="tbox" value="" placeholder="Entrez votre adresse email">
+						<button class="btnbox" type="button" name="button">S'inscrire</button>
 					</div>
 				</form>
 			</div>
-        </main>
-		<br><br><br><br><br><br><br>
+		</main>
         <footer>
 			<div class="iconereseaux">
-            <p>
-				<p><a href="https://www.facebook.com/dentelle.rivegauche"><i class="fa-brands fa-facebook fa-5x" style="color:pink"></i></a></p>				
-				<p><a href="https://www.instagram.com/carole.clh/?hl=fr"><i class="fa-brands fa-instagram fa-5x" style="color: aqua"></i></a></p>
-				<p><a href=https://www.pinterest.fr/carolelehein/au-fil-des-salines-clh/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id=%7B%7Bdefault.session%7D%7D&amp_url=https%3A%2F%2Fwww.pinterest.fr%2Famp%2Fcarolelehein%2Fau-fil-des-salines-clh%2F&open_share=t><i class="fa-brands fa-pinterest fa-5x" style="color:aquamarine"></i></a></p>
-			</p><br>
+				<a href="https://www.facebook.com/dentelle.rivegauche"><i class="fa-brands fa-facebook fa-5x" style="color:pink"></i></a>			
+				<a href="https://www.instagram.com/carole.clh/?hl=fr"><i class="fa-brands fa-instagram fa-5x" style="color: aqua"></i></a>
+				<a href=https://www.pinterest.fr/carolelehein/au-fil-des-salines-clh/><i class="fa-brands fa-pinterest fa-5x" style="color:aquamarine"></i></a>
 			</div>
 			<p id="copyrights">
 					Copyrights 2023 - Au fil des salines - 
-				<a href="mentions_legales.html">Mentions légales</a>
+				<br><a href="mentions_legales.html">Mentions légales</a>
 			</p>
-			<p id="imageetlogofooter">
-			<a href="imageetlogo.jpg"><img src="" title="Aufildessalines" alt=""></a>
-			</p>
+			<div class="imageetlogofooter">
+			<img src="imageetlogofooter.jpg" title="Aufildessalines" alt="Au fil des salines">
+		    </div>
 		</footer>
-					<a class="imagetlogo"href="imageetlogo.jpg"><img src="" title="Aufildessalines" alt=""></a>
 		<script type="text/javascript">
 			//<!--
 					document.onmousemove = suitsouris;
