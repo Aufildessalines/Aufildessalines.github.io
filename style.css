@@ -401,18 +401,22 @@ footer {
     }
     .miseenpage {
         grid-template-columns: 90%;
-        grid-template-rows: 50%;
+        grid-template-rows: 20%;
         column-gap: 10%;
         row-gap: 5%;
     }
     .newsletter {
-        margin-top: 350px;
+        margin-top: 150px;
+    }
+    footer {
+        margin-top: 50px;
     }
     #copyrights {
         padding-left: 50px;
-        padding-top: 280px;
+        padding-top: 250px;
     }
     .imageetlogofooter {
         width: 50px;
+        margin-left: 10%;
     }
 }
