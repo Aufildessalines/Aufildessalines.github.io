@@ -50,7 +50,7 @@ nav {
     font-size: 100%;
     margin: 0% 0% 0% 0%;
     width: 100%;
-    height: 25%;
+    height: 170px;
     top: -150px;
     transition: 0.25s ease;
     background-color: white;
@@ -113,7 +113,7 @@ nav a:hover {
 }
 .input{
     position: fixed;
-    margin: -430px 0% 0% 20%;
+    margin: -200px 0% 0% 20%;
     padding: 20px 50px 20px 50px;
     border-radius: 30px;
     border: none;
@@ -125,7 +125,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     column-gap: 1%;
-    margin: -470px 0% 0% 80%;
+    margin: -250px 0% 0% 80%;
     position: fixed;
     z-index: +1;
     width: 100%;
@@ -276,7 +276,7 @@ footer {
         margin-left: 150px;
     }
     nav li {    
-        height: 60%; 
+        height: 80px; 
         margin: 0 10% 0 4%; 
         padding: 1% 0 0 0; 
     }
@@ -291,11 +291,11 @@ footer {
         right: -55%;
     }
     .input{
-        margin: -420px 0px 0px 300px;
+        margin: -220px 0px 0px 300px;
         padding: 10px 10px 10px 20px;
     }
     .lieniconereseaux{
-        margin: -480px 0px 0px 1000px;
+        margin: -280px 0px 0px 1010px;
     }
     .miseenpage {
         grid-template-columns: 40% 40%;
@@ -320,10 +320,10 @@ footer {
     }
     .input{
         padding: 1% 1% 1% 1%;
-        margin: -430px 0px 0px 280px;
+        margin: -200px 0px 0px 280px;
     }
     .lieniconereseaux{
-        margin: -470px 0px 0px 950px;
+        margin: -250px 0px 0px 950px;
     }
 }
 @media all and (min-width: 1000px) and (max-width: 1099px) {
@@ -333,15 +333,18 @@ footer {
     }
     .input{
         padding: 10px 5px 10px 10px;
-        margin: -430px 0px 0px 240px;
+        margin: -180px 0px 0px 250px;
     }
     .lieniconereseaux{
-        margin: -470px 0px 0px 850px;
+        margin: -230px 0px 0px 900px;
     }
 }
 @media all and (max-width: 999px) {
     header {
         height: 350px;
+    }
+    body {
+        background-size: 40% 40%;
     }
     main {
         margin-left: 100px;
@@ -380,12 +383,12 @@ footer {
         right: -55%;
     }
     .input{
-        margin: -430px 0px 0px 10%;
-        padding: 1% 1% 1% 5%;
+        margin: -230px 0px 0px 25%;
+        padding: 1% 1% 1% 1%;
     }
     .lieniconereseaux{
         column-gap: 1%;
-        margin: -450px 0px 0px 100px;
+        margin: -250px 0px 0px 100px;
         font-size: 80%;
         padding: 5% 8%;
     }
@@ -401,15 +404,8 @@ footer {
     .newsletter {
         margin-top: 150px;
     }
-    footer {
-        margin-top: 50px;
-    }
     #copyrights {
         padding-left: 50px;
         padding-top: 250px;
-    }
-    .imageetlogofooter {
-        width: 50px;
-        margin-left: 10%;
     }
 }

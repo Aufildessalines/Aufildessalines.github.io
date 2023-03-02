@@ -22,7 +22,7 @@
 				</ul>
             </nav>
 			<form>
-				<input type="search" placeholder="Rechercher">
+				<input class="input" type="search" placeholder="Rechercher">
 			</form>	
 			<footer>
 			<div class="iconereseaux">
