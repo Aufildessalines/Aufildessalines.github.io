@@ -8,7 +8,9 @@
 		<script src="https://kit.fontawesome.com/6d273938c6.js" crossorigin="anonymous"></script>
 	</head>
     <body>
+		<img src="licorne.png" alt="licorne.png" id="licorne.png" style="position:absolute;display:block;z-index:5;" />
         <header>
+			<img src="imageetlogofooter.jpg">
 			<nav>
                 <ul>
                     <li><a href="index.php">Accueil</a></li>
@@ -22,11 +24,20 @@
 			<form>
 				<input type="search" placeholder="Rechercher">
 			</form>	
-			<div class="lieniconereseaux">
-			<a href="https://www.facebook.com/dentelle.rivegauche"><i class="fa-brands fa-facebook"></i></a></p>
-			<a href="https://www.instagram.com/carole.clh/?hl=fr"><i class="fa-brands fa-instagram"></i></a></p>
-			<a href="https://www.pinterest.fr/carolelehein/au-fil-des-salines-clh/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id=%7B%7Bdefault.session%7D%7Damp_url=https%3A%2F%2Fwww.pinterest.fr%2Famp%2Fcarolelehein%2Fau-fil-des-salines-clh%2F&open_share=t"><i class="fa-brands fa-pinterest"></i></a></p>	
+			<footer>
+			<div class="iconereseaux">
+				<a href="https://www.facebook.com/dentelle.rivegauche"><i class="fa-brands fa-facebook fa-5x" style="color:pink"></i></a>			
+				<a href="https://www.instagram.com/carole.clh/?hl=fr"><i class="fa-brands fa-instagram fa-5x" style="color: aqua"></i></a>
+				<a href=https://www.pinterest.fr/carolelehein/au-fil-des-salines-clh/><i class="fa-brands fa-pinterest fa-5x" style="color:aquamarine"></i></a>
 			</div>
+			<p id="copyrights">
+					Copyrights 2023 - Au fil des salines - 
+				<a href="mentions_legales.html"><br>Mentions légales</a>
+			</p>
+			<div class="imageetlogofooter">
+			<img src="imageetlogofooter.jpg" title="Aufildessalines" alt="Au fil des salines">
+		    </div>
+		</footer>
         </header>
         <main>
 			<h1>
